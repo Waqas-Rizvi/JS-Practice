@@ -319,3 +319,44 @@ alert(pera)*/
 // var f = +prompt("w")
 // alert(f + 2)
 
+
+//"RESULT APP"
+
+var a = [{
+    rollNumber: '101',
+    studentName: 'Waqas',
+    studentage: 22,
+    CNIC: 4210119738169,
+    employee: true,
+    result: 'Pass'
+}, {
+    rollNumber: '102',
+    studentName: 'Hamza',
+    studentage: 21,
+    CNIC: 4210119738169,
+    employee: true,
+    result: 'Pass'
+}, {
+    rollNumber: '103',
+    studentName: 'Saad',
+    studentage: 22,
+    CNIC: 4210119738169,
+    employee: true,
+    result: 'Fail'
+}, {
+    rollNumber: '104',
+    studentName: 'Yousha',
+    studentage: 18,
+    CNIC: 4210119738169,
+    employee: true,
+    result: 'Fail'
+}]
+function checkResult(e) {
+    var e = document.getElementById("roll").value
+    for (var i = 0; i < a.length; i++) {
+        if (a[i].rollNumber == e) {
+            document.write("Roll Number: " + a[i].rollNumber + "<br>Student Name: " + a[i].studentName + "<br>Student Age: " + a[i].studentage + "<br>CNIC: " + a[i].CNIC + "<br>Employee: " + a[i].employee + "<br>Result: " + a[i].result)
+        }
+    }
+}
+
