@@ -322,41 +322,209 @@ alert(pera)*/
 
 //"RESULT APP"
 
-var a = [{
-    rollNumber: '101',
-    studentName: 'Waqas',
-    studentage: 22,
-    CNIC: 4210119738169,
-    employee: true,
-    result: 'Pass'
-}, {
-    rollNumber: '102',
-    studentName: 'Hamza',
-    studentage: 21,
-    CNIC: 4210119738169,
-    employee: true,
-    result: 'Pass'
-}, {
-    rollNumber: '103',
-    studentName: 'Saad',
-    studentage: 22,
-    CNIC: 4210119738169,
-    employee: true,
-    result: 'Fail'
-}, {
-    rollNumber: '104',
-    studentName: 'Yousha',
-    studentage: 18,
-    CNIC: 4210119738169,
-    employee: true,
-    result: 'Fail'
-}]
-function checkResult(e) {
-    var e = document.getElementById("roll").value
-    for (var i = 0; i < a.length; i++) {
-        if (a[i].rollNumber == e) {
-            document.write("Roll Number: " + a[i].rollNumber + "<br>Student Name: " + a[i].studentName + "<br>Student Age: " + a[i].studentage + "<br>CNIC: " + a[i].CNIC + "<br>Employee: " + a[i].employee + "<br>Result: " + a[i].result)
-        }
-    }
-}
+// var a = [{
+//     rollNumber: '101',
+//     studentName: 'Waqas',
+//     studentage: 22,
+//     CNIC: 4210119738169,
+//     employee: true,
+//     result: 'Pass'
+// }, {
+//     rollNumber: '102',
+//     studentName: 'Hamza',
+//     studentage: 21,
+//     CNIC: 4210119738169,
+//     employee: true,
+//     result: 'Pass'
+// }, {
+//     rollNumber: '103',
+//     studentName: 'Saad',
+//     studentage: 22,
+//     CNIC: 4210119738169,
+//     employee: true,
+//     result: 'Fail'
+// }, {
+//     rollNumber: '104',
+//     studentName: 'Yousha',
+//     studentage: 18,
+//     CNIC: 4210119738169,
+//     employee: true,
+//     result: 'Fail'
+// }]
+// function checkResult(e) {
+//     var e = document.getElementById("roll").value
+//     for (var i = 0; i < a.length; i++) {
+//         if (a[i].rollNumber == e) {
+//             document.write("Roll Number: " + a[i].rollNumber + "<br>Student Name: " + a[i].studentName + "<br>Student Age: " + a[i].studentage + "<br>CNIC: " + a[i].CNIC + "<br>Employee: " + a[i].employee + "<br>Result: " + a[i].result)
+//         }
+//     }
+// }
+
+
+// ============ "Practice 09/Feb/2021" ============== //
+
+// var a = +prompt("", "Enter Percentage")
+// if(a >= 80 && a <= 100){
+//     alert("Grade A+")
+// } else
+// if(a >= 70 && a < 80){
+//     alert("Grade A")
+// } else
+// if(a >= 60 && a < 70){
+//     alert("Grade B")
+// } else
+// if(a >= 50 && a < 60){
+//     alert("Grade C")
+// } else
+// if(a >= 40 && a < 50){
+//     alert("Grade D")
+// } else
+// if(a >= 33 && a < 40){
+//     alert("Grade E")
+// } else
+// if(a >= 0 && a < 33){
+//     alert("Fail")
+// } else {
+//     alert("You Enter Wrong Percentage")
+// }
+
+
+// var a = prompt("", "Ap ko kia chahiay??")
+// var b = ["cake", "biscuit", "bun", "slice"]
+// var c = a.toLowerCase()
+// var match = false
+// for(i = 0; i < b.length; i++){
+//     if(c === b[i]){
+//         match = true
+//         alert("Yes")
+//     }
+// }
+// if(match === false){
+//     alert("No")
+// }
+
+
+// var a = +prompt("","Enter a Number")
+// var b = Math.random()
+// var c = b * 3
+// var d = Math.ceil(c)
+
+// if(a == d){
+//     alert("Correct Answer")
+// } else {
+//     alert("Wrong Answer")
+// }
+
+
+// var a = new Date
+// var b = a.getDay()
+// var c = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+// alert(c[b])
+
+
+// function day(b){
+//     var a = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+//     alert(a[b])    
+// }
+// day(2)
+
+
+// function percentage(a,b){
+//     var c = a / b * 100
+//     alert(c)
+// }
+// percentage(300,500)
+
+
+// function danial(){
+//     var a = 2
+//     var b = 3
+//     var c = a + b
+//     return c
+// }
+// var d = 2 + danial()
+// alert(d)
+
+
+// var a = document.getElementById("waqas")
+// var b = a.parentNode.parentNode
+// console.log(b)
+
+
+// var a = document.getElementById("a")
+// var b = a.firstChild
+// var c = b.nodeName
+// console.log(c)
+
+
+// var result = [{
+//     Rollnum: 12,
+//     Name: "Waqas",
+// },
+// {
+//     Rollnum: 15,
+//     Name: "Danial",
+// }
+// ]
+// console.log(result[1].Rollnum)
+
+
+// var a = [{
+//     rollNumber: '101',
+//     studentName: 'Waqas',
+//     studentage: 22,
+//     CNIC: 4210119738169,
+//     employee: true,
+//     result: 'Pass'
+// }, {
+//     rollNumber: '102',
+//     studentName: 'Hamza',
+//     studentage: 21,
+//     CNIC: 4210119738169,
+//     employee: true,
+//     result: 'Pass'
+// }, {
+//     rollNumber: '103',
+//     studentName: 'Saad',
+//     studentage: 22,
+//     CNIC: 4210119738169,
+//     employee: true,
+//     result: 'Fail'
+// }, {
+//     rollNumber: '104',
+//     studentName: 'Yousha',
+//     studentage: 18,
+//     CNIC: 4210119738169,
+//     employee: true,
+//     result: 'Fail'
+// }]
+// function checkResult() {
+//     var e = document.getElementById("roll").value
+//     for (i = 0; i < a.length; i++) {
+//         if (a[i].rollNumber == e) {
+//             document.write("Roll Number: " + a[i].rollNumber + "<br>Student Name: " + a[i].studentName + "<br>Student Age: " + a[i].studentage + "<br>CNIC: " + a[i].CNIC + "<br>Employee: " + a[i].employee + "<br>Result: " + a[i].result)
+//         }
+//     }
+// }
+
+
+// var a = ["a", "b"]
+// alert(a.length)
+
+
+// function Student(name,age,inst){
+//     this.StudentName = name,
+//     this.age = age,
+//     this.institute = inst
+// }
+// var arr = []
+// function addStudent(){
+//     var name = prompt("Enter Name")
+//     var age = prompt("Enter Age")
+//     var inst = prompt("Enter Institute")
+//     var newStudent = new Student(name,age,inst)
+//     arr.push(newStudent)
+//     console.log(arr)
+// }
+// addStudent()
 
